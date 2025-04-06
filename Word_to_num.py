@@ -40,14 +40,14 @@ def letters_to_int(number):
         hundred_thousands = word_list[-3]
         temp_num = hundred_thousands.strip()
         number_in_int += 100000*words[temp_num]
-        
-    print(number_in_int)
-    return
+
+    return number_in_int
 
 if __name__ == "__main__":
 
     print("Example input ==> 'Two Thousand Three Hundred Fifty Six (2356)'")
     number_in_lett = input("Enter number in Letters: ")
 
-    letters_to_int(number_in_lett.lower())
+    your_number = letters_to_int(number_in_lett.lower())
+    print(f'{number_in_lett} converted to int is: {your_number}")
 
